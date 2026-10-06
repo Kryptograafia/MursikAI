@@ -1,0 +1,16 @@
+---
+description: Build and explain one file at a time
+alwaysApply: true
+---
+
+# One file at a time
+
+When creating or changing this project:
+
+- Name the single file you will add next and what it is for, in a few sentences.
+- Write only that file.
+- Stop. Wait until the user says to continue.
+- Do not create the next file, tests, or infrastructure in the same turn.
+- A question is not permission to keep building.
+
+Go from the outside in: the client, then the Lambda, then Terraform.

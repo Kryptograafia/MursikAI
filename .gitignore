@@ -1,0 +1,27 @@
+# Terraform state holds your account id, every resource id and any value marked
+# sensitive. It is not secret by design, but it does not belong in a repository.
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+
+# Variable files often carry account-specific values.
+*.tfvars
+*.tfvars.json
+
+# Built by terraform from the lambda folder.
+infra/modules/lambda/build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
